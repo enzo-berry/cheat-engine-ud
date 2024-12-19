@@ -47,7 +47,7 @@ begin
   {$endif}
 
   {$ifndef altname}
-  basename:='cheatengine';
+  basename:='llamatools';
   {$else}
   basename:='rt-mod';
   {$endif}

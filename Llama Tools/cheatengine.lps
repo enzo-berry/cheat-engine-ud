@@ -17,7 +17,6 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="4138"/>
         <CursorPos X="3" Y="4140"/>
         <UsageCount Value="22"/>
@@ -3043,7 +3042,12 @@
         <Filename Value="disassemblerarm32thumb.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="disassemblerArm32Thumb"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="735"/>
+        <CursorPos Y="746"/>
         <UsageCount Value="22"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit415>
       <Unit416>
@@ -3129,7 +3133,7 @@
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit426>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="13" HistoryIndex="12">
       <Position1>
         <Filename Value="MainUnit.pas"/>
       </Position1>
@@ -3176,6 +3180,10 @@
         <Filename Value="MainUnit.pas"/>
         <Caret Line="11140" Column="3" TopLine="11138"/>
       </Position12>
+      <Position13>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="4140" Column="3" TopLine="4138"/>
+      </Position13>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

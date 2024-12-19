@@ -223,7 +223,7 @@ resourcestring
   rsAskIfStupid = 'Generating a '+strtrainerlower+' with the current state of the cheat '
     +'table will likely result in a completely useless '+strtrainerlower+' that does '
     +'nothing. Are you sure?';
-  rsOSThereIsANewerVersionifCheatEngineOutEtc = 'There is a newer version of '+strCheatEngine+' out. It''s recommended to use that version instead';
+  rsOSThereIsANewerVersionifLlamaToolsOutEtc = 'There is a newer version of '+strCheatEngine+' out. It''s recommended to use that version instead';
   rsOSThisCheatTableIsCorrupt = 'This '+strCheatTableLower+' is corrupt';
   rsInvalidLuaForTrainer = 'The lua script in this '+strTrainerLower+' has some issues and will therefore not load';
 
@@ -399,7 +399,7 @@ begin
         try
           version:=strtoint(tempnode.TextContent);
           if (version>CurrentTableVersion) then
-            showmessage(rsOSThereIsANewerVersionifCheatEngineOutEtc);
+            showmessage(rsOSThereIsANewerVersionifLlamaToolsOutEtc);
 
           lastLoadedTableVersion:=version;
         except

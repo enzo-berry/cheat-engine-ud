@@ -469,7 +469,7 @@ resourcestring
   rsSigning = 'Signing';
   rsNoName = 'No Name';
   rsAttachToForegroundProcess = 'Attach to current foreground process';
-  rsPopupHideCheatEngine = 'Popup/Hide '+strCheatEngine;
+  rsPopupHideLlamaTools = 'Popup/Hide '+strCheatEngine;
   rsPauseTheSelectedProcess = 'Pause the selected process';
   rsToggleTheSpeedhack = 'Toggle the speedhack';
   rsSpeedhackSpeed = 'Speedhack speed';
@@ -1931,7 +1931,7 @@ begin
   begin
     clear;
     add(rsAttachToForegroundProcess);
-    add(rsPopupHideCheatEngine);
+    add(rsPopupHideLlamaTools);
     add(rsPauseTheSelectedProcess);
     add(rsToggleTheSpeedhack);
     add(rsSpeedhackSpeed+' 1');

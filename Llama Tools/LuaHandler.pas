@@ -142,7 +142,7 @@ resourcestring
   rsLUA_DoScriptWasNotCalledRomTheMainThread = 'LUA_DoScript was not called '
     +'from the main thread';
   rsUndefinedLuaError = 'Undefined lua error';
-  rsLlamaToolsIsBeingAFag = 'Cheatengine is being a fag';
+  rsLlamaToolsIsBeingAFag = 'Llama Tools is being a fag';
 
   rsInvalidFloat = 'Invalid floating point string:%s';
   rsInvalidInt = 'Invalid integer:%s';
@@ -9747,7 +9747,7 @@ begin
   if lua_gettop(L)=1 then
     name:=Lua_ToString(L, 1)
   else
-    name:='cheatenginebla';
+    name:='llamatoolsbla';
 
   if luaserverExists(name)=false then
     tluaserver.create(name);
