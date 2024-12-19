@@ -22,7 +22,7 @@ object About: TAbout
     Width = 488
     Align = alClient
     AutoSize = True
-    Caption = 'Cheat Engine'
+    Caption = 'Llama Tools'
     ClientHeight = 290
     ClientWidth = 484
     TabOrder = 0

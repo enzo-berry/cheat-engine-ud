@@ -9,12 +9,12 @@
       </Flags>
       <SessionStorage Value="InProjectDir"/>
       <AutoCreateForms Value="False"/>
-      <Title Value="Cheat Engine 7.5"/>
+      <Title Value="LLama Tools"/>
       <UseXPManifest Value="True"/>
       <XPManifest>
         <DpiAware Value="True"/>
-        <TextName Value="Cheat Engine"/>
-        <TextDesc Value="Scripting language and tools"/>
+        <TextName Value="Llama Tools"/>
+        <TextDesc Value=""/>
       </XPManifest>
       <Icon Value="0"/>
     </General>
@@ -23,14 +23,12 @@
       <OutDir Value="bin\languages"/>
     </i18n>
     <VersionInfo>
-      <UseVersionInfo Value="True"/>
-      <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="7"/>
       <MinorVersionNr Value="5"/>
-      <BuildNr Value="7712"/>
+      <BuildNr Value="7714"/>
       <Language Value="041C"/>
       <CharSet Value="04B0"/>
-      <StringTable CompanyName="Cheat Engine" FileDescription="Cheat Engine" ProductVersion="7.5"/>
+      <StringTable CompanyName="Llama Tools" FileDescription="Llama Tools" ProductVersion="7.5"/>
     </VersionInfo>
     <BuildModes Count="11">
       <Item1 Name="Release 32-Bit" Default="True"/>
@@ -122,7 +120,7 @@
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="bin\cheatengine-$(TargetCPU)-SSE4-AVX2"/>
+            <Filename Value="bin\llamatools"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir);$(LazarusDir)\ide\include\$(TargetOS);$(LazarusDir)\images;$(LazarusDir)\ideintf\images"/>
@@ -176,28 +174,6 @@
 -dNESTEDSTRUCTURES
 -donebytejumps
 -dNoODS"/>
-            <OtherDefines Count="20">
-              <Define0 Value="NOTMULTITHREADED"/>
-              <Define1 Value="benchmarkps"/>
-              <Define2 Value="cemain"/>
-              <Define3 Value="NDEBUG"/>
-              <Define4 Value="D3DDebug"/>
-              <Define5 Value="NOVMX"/>
-              <Define6 Value="CUSTOMFLOAT"/>
-              <Define7 Value="XDEBUG"/>
-              <Define8 Value="memleaksearch"/>
-              <Define9 Value="checkassembleralphabet"/>
-              <Define10 Value="memorymapped"/>
-              <Define11 Value="privatebuild"/>
-              <Define12 Value="DBVMFORAMDISWORKING"/>
-              <Define13 Value="NESTEDSTRUCTURES"/>
-              <Define14 Value="THREADNAMESUPPORT"/>
-              <Define15 Value="LINUXTCCTEST"/>
-              <Define16 Value="asserthexviewisthreadsafe"/>
-              <Define17 Value="DEBUGPROTOCOL"/>
-              <Define18 Value="NEWCHANGEREGONX86"/>
-              <Define19 Value="overflowdebug"/>
-            </OtherDefines>
           </Other>
         </CompilerOptions>
       </Item3>

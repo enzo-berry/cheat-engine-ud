@@ -290,7 +290,7 @@ var
   noautorun: boolean;
 
 begin
-  Application.Title:='Cheat Engine 7.5';
+  Application.Title:='LLama Tools';
  //'Cheat Engine 7.3';
   {$ifdef darwin}
   macPortFixRegPath;

@@ -109,7 +109,7 @@ implementation
 uses forms, controls, Registry, Win32Proc{$ifndef skip_mainunit2}, mainunit2{$endif};
 
 {$ifdef skip_mainunit2}
-const strCheatEngine='Cheat Engine';
+const strCheatEngine='Llama Tools';
 {$endif}
 
 
