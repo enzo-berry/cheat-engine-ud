@@ -3191,19 +3191,19 @@ begin
         if not fileexists(dataloc) then
         begin
 
-          servicename:='CEDRIVER73';
+          servicename:='llamatools';
           ultimapservicename:='ULTIMAP2';
-          processeventname:='DBKProcList60';
-          threadeventname:='DBKThreadList60';
+          processeventname:='LlamaToolsProcList60';
+          threadeventname:='LlamaToolsThreadList60';
 
           if iswow64 then
           begin
-            sysfile:='dbk64.sys';
+            sysfile:='llamatools64.sys';
             ultimapsysfile:='ultimap2-64.sys';
           end
           else
           begin
-            sysfile:='dbk32.sys';
+            sysfile:='llamatools32.sys';
             ultimapsysfile:='';
           end;
 

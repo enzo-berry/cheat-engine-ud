@@ -1,1 +1,20 @@
 First log message: 19/12/2024
+Unhandled exception: Failed to execute the dll loader (Exception class Exception)
+  Stack trace:
+  $00000000004C0483  INJECTDLL,  line 1347 of CEFuncProc.pas
+  $0000000000598C31  FORMCREATE,  line 653 of frmMemoryAllocHandlerUnit.pas
+  $0000000000468913  DOCREATE,  line 921 of include/customform.inc
+  $00000000004666CE  AFTERCONSTRUCTION,  line 77 of include/customform.inc
+  $0000000000A01147  CREATE,  line 48 of betterControls/newform.pas
+  $00000000005A82B3  FORMCREATE,  line 145 of frmHeapsUnit.pas
+  $0000000000468913  DOCREATE,  line 921 of include/customform.inc
+  $00000000004666CE  AFTERCONSTRUCTION,  line 77 of include/customform.inc
+  $0000000000A01147  CREATE,  line 48 of betterControls/newform.pas
+  $000000000057A522  HEAPS1CLICK,  line 4205 of MemoryBrowserFormUnit.pas
+  $0000000000879715  CLICK,  line 83 of include/menuitem.inc
+  $0000000000879FCA  DOCLICKED,  line 296 of include/menuitem.inc
+  $0000000000411711
+  $0000000000841EA4  DOWINDOWPROC,  line 2141 of win32callback.inc
+  $0000000000843A08  WINDOWPROC,  line 2772 of win32callback.inc
+  $00000000009F99D8  CUSTOMFORMWNDPROC,  line 397 of win32wsforms.pp
+  $00007FFA6157EF5C
