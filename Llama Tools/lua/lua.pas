@@ -35,7 +35,7 @@
 **    - thomas.lavergne@laposte.net
 **   In french or in english
 **
-** Updated to Lua 5.3 by Eric Heijnen (cheatengine.org)
+** Updated to Lua 5.3 by Eric Heijnen (llamatools.org)
 
 *)
 

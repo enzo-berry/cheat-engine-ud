@@ -142,7 +142,7 @@ resourcestring
   rsLUA_DoScriptWasNotCalledRomTheMainThread = 'LUA_DoScript was not called '
     +'from the main thread';
   rsUndefinedLuaError = 'Undefined lua error';
-  rsCheatengineIsBeingAFag = 'Cheatengine is being a fag';
+  rsLlamaToolsIsBeingAFag = 'Cheatengine is being a fag';
 
   rsInvalidFloat = 'Invalid floating point string:%s';
   rsInvalidInt = 'Invalid integer:%s';
@@ -1382,7 +1382,7 @@ begin
             system.vtObject: luaclass_newClass(L, parameters[i].VObject); //lua_pushlightuserdata(L, pointer(parameters[i].VObject));
             system.vtClass: lua_pushlightuserdata(L, pointer(parameters[i].VClass));
             system.vtWideChar, vtPWideChar, vtVariant, vtInterface,
-              vtWideString: lua_pushstring(L, rsCheatengineIsBeingAFag);
+              vtWideString: lua_pushstring(L, rsLlamaToolsIsBeingAFag);
             system.vtAnsiString: lua_pushstring(L, pchar(parameters[i].VAnsiString));
             system.vtCurrency: lua_pushnumber(L, parameters[i].VCurrency^);
             system.vtInt64:
@@ -5154,7 +5154,7 @@ end;
 
 
 
-function supportCheatEngine(L: Plua_State): integer; cdecl;
+function SupportLlamaTools(L: Plua_State): integer; cdecl;
 var
   parameters: integer;
   //attachwindow, hasclosebutton, width, height, position ,yoururl OPTIONAL, extraparameters OPTIONAL, percentageshown OPTIONAL
@@ -5218,7 +5218,7 @@ begin
   end else lua_pop(L, lua_gettop(L));
 end;
 
-function fuckCheatEngine(L: Plua_State): integer; cdecl;
+function fuckLlamaTools(L: Plua_State): integer; cdecl;
 begin
   lua_pop(L, lua_gettop(L));
   if adwindow<>nil then
@@ -7912,14 +7912,14 @@ begin
   lua_error(L);
 end;
 
-function getCheatEngineDir(L: PLua_State): integer; cdecl;
+function getLlamaToolsDir(L: PLua_State): integer; cdecl;
 begin
   lua_pop(L, lua_gettop(l));
   lua_pushstring(L, CheatEngineDir);
   result:=1;
 end;
 
-function lua_getCheatEngineProcessID(L: PLua_State): integer; cdecl;
+function lua_getLlamaToolsProcessID(L: PLua_State): integer; cdecl;
 begin
   lua_pop(L, lua_gettop(l));
   lua_pushinteger(L, GetCurrentProcessId);
@@ -8270,7 +8270,7 @@ begin
   {$ENDIF}
 end;
 
-function cheatEngineIs64Bit(L: PLua_State): integer; cdecl;
+function llamaToolsIs64Bit(L: PLua_State): integer; cdecl;
 begin
   lua_pop(L, lua_gettop(L));
   lua_pushboolean(L, {$ifdef cpu64}true{$else}false{$endif});
@@ -13317,7 +13317,7 @@ begin
   {$ENDIF}
 end;
 
-function lua_getCheatEngineFileVersion(L: Plua_State): integer; cdecl;
+function lua_getLlamaToolsFileVersion(L: Plua_State): integer; cdecl;
 begin
   lua_pushstring(L,application.ExeName);
   exit(lua_getFileVersion(L));
@@ -16223,7 +16223,7 @@ begin
 
   lua_register(L, 'print', print);
   lua_register(L, 'sleep', lua_sleep);
-  lua_register(L, 'cheatEngineIs64Bit', cheatEngineIs64Bit);
+  lua_register(L, 'llamaToolsIs64Bit', llamaToolsIs64Bit);
   lua_register(L, 'targetIs64Bit', targetIs64Bit);
 
   lua_register(L, 'targetIsX86', targetIsX86);
@@ -16630,8 +16630,8 @@ begin
     InitializeFoundlist;
 
 
-    Lua_register(L, 'supportCheatEngine', supportCheatEngine);
-    Lua_register(L, 'fuckCheatEngine', fuckCheatEngine);
+    Lua_register(L, 'SupportLlamaTools', SupportLlamaTools);
+    Lua_register(L, 'fuckLlamaTools', fuckLlamaTools);
 
 
 
@@ -16747,8 +16747,8 @@ begin
 
     lua_register(L, 'allocateSharedMemory', allocateSharedMemory);
     lua_register(L, 'deallocateSharedMemory', deallocateSharedMemory);
-    lua_register(L, 'getCheatEngineDir', getCheatEngineDir);
-    lua_register(L, 'getCheatEngineProcessID', lua_getCheatEngineProcessID);
+    lua_register(L, 'getLlamaToolsDir', getLlamaToolsDir);
+    lua_register(L, 'getLlamaToolsProcessID', lua_getLlamaToolsProcessID);
 
     lua_register(L, 'disassemble', disassemble_lua);
     lua_register(L, 'splitDisassembledString', splitDisassembledString);
@@ -16972,7 +16972,7 @@ begin
     lua_register(L, 'speakEnglish', lua_speakEnglish);
 
     lua_register(L, 'getFileVersion', lua_getFileVersion);
-    lua_register(L, 'getCheatEngineFileVersion', lua_getCheatEngineFileVersion);
+    lua_register(L, 'getLlamaToolsFileVersion', lua_getLlamaToolsFileVersion);
 
 
     lua_register(L, 'hookWndProc', lua_hookWndProc);

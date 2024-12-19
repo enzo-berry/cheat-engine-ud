@@ -57,7 +57,7 @@ __thread char* threadname;
 #define CESERVERVERSION 6 //6 because modulelist got changed
 
 
-char versionstring[]="CHEATENGINE Network 2.3";
+char versionstring[]="LLAMATOOLS Network 2.3";
 char *CESERVERPATH;
 
 volatile int connections=0;

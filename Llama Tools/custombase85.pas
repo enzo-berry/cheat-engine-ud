@@ -5,7 +5,7 @@ unit CustomBase85;
 //
 // Base85ToBin doesn't support white spaces and line breaks (HexToBin doesn't support it too)
 
-// implementation by mgr.inz.Player http://forum.cheatengine.org/viewtopic.php?t=560886 and http://pastebin.com/EUfGFpZ9
+// implementation by mgr.inz.Player http://forum.llamatools.org/viewtopic.php?t=560886 and http://pastebin.com/EUfGFpZ9
 
 {$mode delphi}
 

@@ -1016,7 +1016,7 @@ begin
     getmem(buf,size);
     if readprocessmemory(processhandle,pointer(address),buf,size,temp) then
     begin
-      memfile.WriteBuffer(pchar('CHEATENGINE')^,11);
+      memfile.WriteBuffer(pchar('LLAMATOOLS')^,11);
       temp:=2; //version
       memfile.WriteBuffer(temp,4);
       a:=address;
@@ -1042,7 +1042,7 @@ begin
     getmem(check,12);
     memfile.ReadBuffer(check^,11);
     check[11]:=#0;
-    if check='CHEATENGINE' then
+    if check='LLAMATOOLS' then
     begin
       memfile.ReadBuffer(temp,4);
       if temp<>1 then raise exception.Create(Format(rsTheVersionOfIsIncompatibleWithThisCEVersion, [filename]));
@@ -1092,7 +1092,7 @@ begin
     begin
       //not xml
 
-      if X='CHEATENGINE' then
+      if X='LLAMATOOLS' then
       begin
          doc:=ConvertCheatTableToXML(filename)
       end

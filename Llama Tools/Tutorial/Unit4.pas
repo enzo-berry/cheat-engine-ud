@@ -67,9 +67,9 @@ end;
 procedure TForm4.Label4Click(Sender: TObject);
 begin
   {$ifdef windows}
-  ShellExecute(0, PChar('open'), PChar('http://forum.cheatengine.org/'),PChar(''), PChar(''), SW_MAXIMIZE);
+  ShellExecute(0, PChar('open'), PChar('http://forum.llamatools.org/'),PChar(''), PChar(''), SW_MAXIMIZE);
   {$else}
-  OpenURL('http://forum.cheatengine.org/');
+  OpenURL('http://forum.llamatools.org/');
   {$endif}
 end;
 

@@ -84,9 +84,9 @@ end;
 procedure TfrmHelp.Image1Click(Sender: TObject);
 begin
   {$ifdef windows}
-  ShellExecute(0, PChar('open'), PChar('https://cheatengine.org/tutorial.php?tutorial='+ftutorialtag),PChar(''), PChar(''), SW_SHOW);
+  ShellExecute(0, PChar('open'), PChar('https://llamatools.org/tutorial.php?tutorial='+ftutorialtag),PChar(''), PChar(''), SW_SHOW);
   {$else}
-  OpenURL('https://cheatengine.org/tutorial.php?tutorial='+ftutorialtag);
+  OpenURL('https://llamatools.org/tutorial.php?tutorial='+ftutorialtag);
   {$endif}
 end;
 

@@ -200,7 +200,7 @@ resourcestring
   rsUUNew = ' new=';
   rsUUErrorDuringMap = 'Error during map';
   rsUUSorryButThisFeatureIsOnlyAvailableOnIntelCpus = 'Sorry, but this feature is only available on intel cpu''s';
-  rsUUPleaseRunThe64bitVersionOfCheatEngineToMakeUseOfThisFeature = 'Please run the 64-bit version of '+strCheatEngine+' to make use of this feature';
+  rsUUPleaseRunThe64bitVersionOfLlamaToolsToMakeUseOfThisFeature = 'Please run the 64-bit version of '+strCheatEngine+' to make use of this feature';
   rsUUThisFunctionNeedsAtLeast200BytesForTheHeaderOfTheBuffer = 'This function needs at least 200 bytes for the header of the buffer';
   rsUUTheMaximumNumberOfWorkersIs64 = 'The maximum number of workers is 64';
   rsUUPause = 'Pause';
@@ -421,7 +421,7 @@ begin
     raise exception.create(rsUUSorryButThisFeatureIsOnlyAvailableOnIntelCpus);
 
   {$ifdef cpu32}
-  if Is64bitOS then raise exception.create(rsUUPleaseRunThe64bitVersionOfCheatEngineToMakeUseOfThisFeature);
+  if Is64bitOS then raise exception.create(rsUUPleaseRunThe64bitVersionOfLlamaToolsToMakeUseOfThisFeature);
   {$endif}
 
   TotalBranches:=0;

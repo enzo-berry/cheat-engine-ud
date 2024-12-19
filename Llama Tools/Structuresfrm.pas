@@ -35,7 +35,7 @@ resourcestring
   rsUnnamedStructure = 'unnamed structure';
   rsStructureDefine = 'Structure define';
   rsGiveTheNameForThisStructure = 'Give the name for this structure';
-  rsDoYouWantCheatEngineToTryAndFillInTheMostBasicType = 'Do you want Llama '
+  rsDoYouWantLlamaToolsToTryAndFillInTheMostBasicType = 'Do you want Llama '
     +'Tools to try and fill in the most basic types of the struct using the '
     +'current address?';
   rsPleaseGiveAStartingSizeOfTheStructYouCanChangeThis = 'Please give a '

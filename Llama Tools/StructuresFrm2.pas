@@ -722,7 +722,7 @@ resourcestring
    rsStructureDefine = 'Structure define';
    rsStructAlreadyExists = 'This is detected as structure named %s which already exists. Define a new version of this structure? (Click no to go to the existing one)';
    rsGiveTheNameForThisStructure = 'Give the name for this structure';
-   rsDoYouWantCheatEngineToTryAndFillInTheMostBasicType = 'Do you want Llama '
+   rsDoYouWantLlamaToolsToTryAndFillInTheMostBasicType = 'Do you want Llama '
      +'Tools to try and fill in the most basic types of the struct using the '
      +'current address?';
    rsPleaseGiveAStartingSizeOfTheStructYouCanChangeThis = 'Please give a '
@@ -4848,7 +4848,7 @@ begin
 
 
     //ask if it should be filled in automatically
-    autoFillIn:=messagedlg(rsDoYouWantCheatEngineToTryAndFillInTheMostBasicType, mtconfirmation, [mbyes, mbno, mbcancel], 0);
+    autoFillIn:=messagedlg(rsDoYouWantLlamaToolsToTryAndFillInTheMostBasicType, mtconfirmation, [mbyes, mbno, mbcancel], 0);
     if autoFillIn=mrcancel then exit;
 
     mainStruct:=nil;

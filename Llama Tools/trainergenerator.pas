@@ -44,7 +44,7 @@ type
     cbPopupOnKeypress: TCheckBox;
     cbProtect: TCheckBox;
     cbStopPlaying: TCheckBox;
-    cbSupportCheatEngine: TCheckBox;
+    cbSupportLlamaTools: TCheckBox;
     cbUseD3DHook: TCheckBox;
     comboProcesslist: TComboBox;
     CTSaveDialog: TSaveDialog;
@@ -108,7 +108,7 @@ type
     procedure cbOutputSelect(Sender: TObject);
     procedure cbPlayXMChange(Sender: TObject);
     procedure cbStopPlayingChange(Sender: TObject);
-    procedure cbSupportCheatEngineChange(Sender: TObject);
+    procedure cbSupportLlamaToolsChange(Sender: TObject);
     procedure cbUseD3DHookChange(Sender: TObject);
     procedure edtCaptionChange(Sender: TObject);
     procedure edtPopupHotkeyKeyDown(Sender: TObject; var Key: Word;
@@ -212,7 +212,7 @@ resourcestring
     +'want to set the hotkey for';
   rsYouNeedACheatTableWithCheatEntries = 'You need a cheat table with cheat '
     +'entries';
-  rsDonTSupportCheatEngineOrYourself = 'Don''t support '+strCheatEngine+' (or '
+  rsDonTSupportLlamaToolsOrYourself = 'Don''t support '+strCheatEngine+' (or '
     +'yourself)';
   rsThankYou = 'Thank you! :)';
   rsAaaaw = 'aaaaw :(';
@@ -750,8 +750,8 @@ begin
     //deal with it by ignoring it
   end;
 
-  if not cbSupportCheatEngine.checked then
-    cbSupportCheatEngine.checked:=true;
+  if not cbSupportLlamaTools.checked then
+    cbSupportLlamaTools.checked:=true;
 
   cleanProcessList(comboProcesslist.items);
 
@@ -1291,12 +1291,12 @@ begin
 
     end;
 
-    if not cbSupportCheatEngine.checked then
+    if not cbSupportLlamaTools.checked then
     begin
       if adconfig<>nil then
       begin
 
-        l.add('supportCheatEngine('+trainerform.name+', '+BoolToStr(adconfig.cbCanClose.checked,'true','false')+', '+adconfig.edtWidth.text+', '+adconfig.edtHeight.text+', '+inttostr(adconfig.adposition)+', '+QuotedStr(adconfig.ownurl)+', '+QuotedStr(adconfig.extraparam)+', '+inttostr(adconfig.percentage)+')');
+        l.add('SupportLlamaTools('+trainerform.name+', '+BoolToStr(adconfig.cbCanClose.checked,'true','false')+', '+adconfig.edtWidth.text+', '+adconfig.edtHeight.text+', '+inttostr(adconfig.adposition)+', '+QuotedStr(adconfig.ownurl)+', '+QuotedStr(adconfig.extraparam)+', '+inttostr(adconfig.percentage)+')');
         l.add('--Thank you from Dark Byte--');
       end;
     end;
@@ -1860,17 +1860,17 @@ end;
 
 procedure TfrmTrainerGenerator.RestoreSupportCE(sender: tobject);
 begin
-  cbSupportCheatEngine.caption:=rsDonTSupportCheatEngineOrYourself;
+  cbSupportLlamaTools.caption:=rsDonTSupportLlamaToolsOrYourself;
   if restoretimer<>nil then
     restoretimer.enabled:=false;
 end;
 
-procedure TfrmTrainerGenerator.cbSupportCheatEngineChange(Sender: TObject);
+procedure TfrmTrainerGenerator.cbSupportLlamaToolsChange(Sender: TObject);
 begin
   //Guilt procedure
-  if not cbSupportCheatEngine.checked then
+  if not cbSupportLlamaTools.checked then
   begin
-    cbSupportCheatEngine.caption:=rsThankYou;
+    cbSupportLlamaTools.caption:=rsThankYou;
     //show the ad config window
 
     if adwindow=nil then
@@ -1907,7 +1907,7 @@ begin
   end
   else
   begin
-    cbSupportCheatEngine.caption:=rsAaaaw;
+    cbSupportLlamaTools.caption:=rsAaaaw;
     if adwindow<>nil then
     begin
       adwindow.AttachToForm(nil);

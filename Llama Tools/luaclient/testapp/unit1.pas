@@ -39,7 +39,7 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  if CELUA_Initialize('cheatenginebla') then
+  if CELUA_Initialize('llamatoolsbla') then
     caption:='Connected';
 end;
 

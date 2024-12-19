@@ -1073,7 +1073,7 @@ initialization
       return "-Mforce-thumb"
     end
   end
-  armconfig.Path=getCheatEngineDir()..[[binutils\arm\bin]]
+  armconfig.Path=getLlamaToolsDir()..[[binutils\arm\bin]]
   armconfig.Prefix="arm-linux-androideabi-"
 
   registerBinUtil(armconfig)

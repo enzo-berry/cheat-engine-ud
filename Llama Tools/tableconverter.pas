@@ -82,7 +82,7 @@ begin
       ctfile.ReadBuffer(x^,11);
       x[11]:=#0;
 
-     // if x<>'CHEATENGINE' then
+     // if x<>'LLAMATOOLS' then
      //   raise exception.Create('Not a valid Llama Tools 5.6 table. If this table was made by a uce, get ce 5.6 and open/resave it');
 
     finally

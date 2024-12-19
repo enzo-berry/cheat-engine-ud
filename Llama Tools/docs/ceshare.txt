@@ -1,5 +1,5 @@
 ceshare is a lua extension that, in the background, connects to a website (by 
-default cheatengine.org, but you're free to implement your own database...) and
+default llamatoolls.org, but you're free to implement your own database...) and
 querries information about the currently opened process
 
 Information about the process is gained from initially doing a md5sum of 

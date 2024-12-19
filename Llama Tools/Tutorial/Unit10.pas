@@ -84,7 +84,7 @@ resourcestring
   rsStop = 'Stop';
   rsRestartGameAndAutoplay = 'Restart game and autoplay';
   rsFailureYourTeamDied = 'Failure. Your team died';
-  rsTryAgain10 = 'Can''t figure out how to do this? Don''t worry. Try asking in the forum at cheatengine.org or perhaps someone already explained it better '
+  rsTryAgain10 = 'Can''t figure out how to do this? Don''t worry. Try asking in the forum at llamatools.org or perhaps someone already explained it better '
     +'there. Are you sure you want to quit?';
   rsStep9SharedCodePW = 'Step 9: Shared code: (PW=%s)';
 

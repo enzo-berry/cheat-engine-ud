@@ -99,13 +99,13 @@ var
     if LangID <> '' then
     begin
       //ParamStrUTF8(0) is said not to work properly in linux, but I've tested it
-      Result := cheatenginedir + {$ifdef Darwin}'../'+{$endif}'Languages' + DirectorySeparator + LangID + DirectorySeparator + 'cheatengine'+LCEXT;
+      Result := CheatEngineDir + {$ifdef Darwin}'../'+{$endif}'Languages' + DirectorySeparator + LangID + DirectorySeparator + 'llamatools'+LCEXT;
       if FileExists(Result) then exit;
 
-      Result := cheatenginedir + {$ifdef Darwin}'../'+{$endif}'Languages' + DirectorySeparator + LangID + DirectorySeparator + 'cheatengine-x86_64'+LCEXT;
+      Result := CheatEngineDir + {$ifdef Darwin}'../'+{$endif}'Languages' + DirectorySeparator + LangID + DirectorySeparator + 'llamatools-x86_64'+LCEXT;
       if FileExists(Result) then exit;
 
-      Result := cheatenginedir + {$ifdef Darwin}'../'+{$endif}'Languages' + DirectorySeparator + LangID + DirectorySeparator + 'cheatengine-i386'+LCEXT;
+      Result := CheatEngineDir + {$ifdef Darwin}'../'+{$endif}'Languages' + DirectorySeparator + LangID + DirectorySeparator + 'llamatools-i386'+LCEXT;
       if FileExists(Result) then exit;
 
     end;
@@ -128,7 +128,7 @@ begin
     Lang := GetEnvironmentVariableUTF8('LANG');
 
 
-  languageIniFile:=cheatenginedir+ {$ifdef darwin}'../'+{$endif}'Languages' + DirectorySeparator+'language.ini';
+  languageIniFile:=CheatEngineDir+ {$ifdef darwin}'../'+{$endif}'Languages' + DirectorySeparator+'language.ini';
   {$ifdef darwin}
   OutputDebugString('languageIniFile='+languageIniFile);
   {$endif}
@@ -402,8 +402,8 @@ begin
   s:=StringReplace(s, 'Llama Tools','Runtime Modifier',[rfReplaceAll, rfIgnoreCase]);
   s:=StringReplace(s, 'cheating in','modding',[rfReplaceAll]);
   s:=StringReplace(s, 'cheating','modding',[rfReplaceAll]);
-  s:=StringReplace(s, 'cheatengine','runtimemodifier',[rfReplaceAll]);
-  s:=StringReplace(s, 'runtimemodifier.org','cheatengine.org',[rfReplaceAll]);
+  s:=StringReplace(s, 'llamatools','runtimemodifier',[rfReplaceAll]);
+  s:=StringReplace(s, 'runtimemodifier.org','llamatools.org',[rfReplaceAll]);
   s:=StringReplace(s, 'cheat','modification',[rfReplaceAll]);
   s:=StringReplace(s, 'Tutorial-','rtm-Tutorial-',[rfReplaceAll, rfIgnoreCase]);
   s:=StringReplace(s, 'Cheat Table','Code Table',[rfReplaceAll]);

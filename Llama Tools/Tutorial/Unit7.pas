@@ -85,7 +85,7 @@ resourcestring
     ''+#13#10+
     ''+#13#10+
     'extra:'+#13#10+
-    'You could also use the pointer scanner to find the pointer to this address. https://cheatengine.org/help/pointer-scan.htm';
+    'You could also use the pointer scanner to find the pointer to this address. https://llamatools.org/help/pointer-scan.htm';
   rsDontFuckingFreezeThePointer = 'I''m sorry, but freezing the pointer is not'
     +' really a functional solution';
 

@@ -211,7 +211,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 				  {
 					  
 					  char errorstring[255];
-					  sprintf_s(errorstring, 254,"Your system must have Llama Tools installed to be able to use this trainer\nwww.cheatengine.org\n(%x)", STATUS);
+					  sprintf_s(errorstring, 254,"Your system must have Llama Tools installed to be able to use this trainer\nwww.llamatools.org\n(%x)", STATUS);
 					  MessageBoxA(0,errorstring,"Launch Error",MB_OK | MB_ICONERROR);
 				  }
 			  }

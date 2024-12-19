@@ -224,8 +224,8 @@ object frmTrainerGenerator: TfrmTrainerGenerator
           TabOrder = 0
         end
         object Label2: TLabel
-          AnchorSideLeft.Control = cbSupportCheatEngine
-          AnchorSideTop.Control = cbSupportCheatEngine
+          AnchorSideLeft.Control = cbSupportLlamaTools
+          AnchorSideTop.Control = cbSupportLlamaTools
           AnchorSideTop.Side = asrBottom
           Left = 7
           Height = 15
@@ -273,7 +273,7 @@ object frmTrainerGenerator: TfrmTrainerGenerator
           OnClick = Button3Click
           TabOrder = 3
         end
-        object cbSupportCheatEngine: TCheckBox
+        object cbSupportLlamaTools: TCheckBox
           AnchorSideLeft.Control = Panel5
           AnchorSideTop.Control = Panel5
           Left = 7
@@ -283,7 +283,7 @@ object frmTrainerGenerator: TfrmTrainerGenerator
           BorderSpacing.Left = 7
           Caption = 'Don''t support  (or yourself)'
           Checked = True
-          OnChange = cbSupportCheatEngineChange
+          OnChange = cbSupportLlamaToolsChange
           State = cbChecked
           TabOrder = 4
         end
@@ -331,7 +331,7 @@ object frmTrainerGenerator: TfrmTrainerGenerator
             BorderSpacing.Right = 8
             Lines.Strings = (
               'This trainer was made by '
-              'www.cheatengine.org'
+              'www.llamatoolls.org'
             )
             ScrollBars = ssVertical
             TabOrder = 1

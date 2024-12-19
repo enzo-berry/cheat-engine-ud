@@ -36,9 +36,9 @@ resourcestring
   rsIsPasswordCorrect='Is the password correct?';
   rsCouldNotOpenTheAlgorithmProvider = 'Could not open the algorithm provider.  Load the table as if it''s signature is valid?';
   rsBcryptCouldNotBeUsed = 'bcrypt could not be used';
-  rsSelectYourCheatEngineSignatureFile = 'Select your '+strCheatEngine+' signature '
+  rsSelectYourLlamaToolsSignatureFile = 'Select your '+strCheatEngine+' signature '
     +'file';
-  rsCheatEngineSignatureFiles = strCheatEngine+' signature files';
+  rsLlamaToolsSignatureFiles = strCheatEngine+' signature files';
   rsThisTableHasBeenModified = 'This table has been modified. To load this '
     +'table, remove the signature part with an editor (And check the file for '
     +'suspicious things while you''re at it)';
@@ -51,7 +51,7 @@ resourcestring
   rsFailedCreatingHasAlgorithmProvider2 = 'Failed creating has algorithm '
     +'provider';
   rsFailedToLoadTheTablePublicKey = 'Failed to load the table public key';
-  rsFailedToLoadCheatEnginePublicKey = 'Failed to load '+strCheatEngine+' public key';
+  rsFailedToLoadLlamaToolsPublicKey = 'Failed to load '+strCheatEngine+' public key';
   rsNoSignedHash = 'This table''s signature does not contain a SignedHash '
     +'element';
   rsNoPublicKey =
@@ -239,7 +239,7 @@ begin
       begin
         s:=BCryptImportKeyPair(hAlgoritm, 0, BCRYPT_ECCPUBLIC_BLOB, cheatenginepublictablekey, @publictablekey[0], 140, 0);
         if not succeeded(s) then raise exception.create(
-          rsFailedToLoadCheatEnginePublicKey);
+          rsFailedToLoadLlamaToolsPublicKey);
       end;
 
       //load the public key of this table while we're at it
@@ -583,8 +583,8 @@ begin
   begin
     od:=TOpenDialog.Create(nil);
     try
-      od.Title:=rsSelectYourCheatEngineSignatureFile;
-      od.Filter:=rsCheatEngineSignatureFiles+'|*.CESIG';
+      od.Title:=rsSelectYourLlamaToolsSignatureFile;
+      od.Filter:=rsLlamaToolsSignatureFiles+'|*.CESIG';
       od.Options:=od.Options+[ofFileMustExist, ofDontAddToRecent];
       if od.execute then
         pathtosigfile:=encodepointer(strnew(pchar(od.FileName)))

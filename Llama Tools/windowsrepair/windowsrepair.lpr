@@ -42,12 +42,12 @@ var
 
 begin
   deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Llama Tools.exe');
-  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cheatengine-i386.exe');
-  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cheatengine-x86_64.exe');
+  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\llamaengine-i386.exe');
+  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\llamaengine-x86_64.exe');
 
   deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Llama Tools.exe');
-  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cheatengine-i386.exe');
-  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cheatengine-x86_64.exe');
+  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\llamaengine-i386.exe');
+  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\llamaengine-x86_64.exe');
 
   reg:=Tregistry.Create;
   try
@@ -55,15 +55,15 @@ begin
     if reg.OpenKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options',false) then
     begin
       reg.deletekey('Llama Tools.exe');
-      reg.deletekey('cheatengine-i386.exe');
-      reg.deletekey('cheatengine-x86_64.exe');
+      reg.deletekey('llamaengine-i386.exe');
+      reg.deletekey('llamaengine-x86_64.exe');
     end;
 
     if reg.OpenKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options',false) then
     begin
       reg.deletekey('Llama Tools.exe');
-      reg.deletekey('cheatengine-i386.exe');
-      reg.deletekey('cheatengine-x86_64.exe');
+      reg.deletekey('llamaengine-i386.exe');
+      reg.deletekey('llamaengine-x86_64.exe');
     end;
   finally
     reg.free;

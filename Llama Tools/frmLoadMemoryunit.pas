@@ -82,9 +82,9 @@ begin
     datafile.ReadBuffer(check^,11);
     check[11]:=#0;
 
-    if check='CHEATENGINE' then
+    if check='LLAMATOOLS' then
     begin
-      //this is a file with a header. (if not the user has been lame enough to copy memory starting with CHEATENGINE)
+      //this is a file with a header. (if not the user has been lame enough to copy memory starting with LLAMATOOLS)
       temp:=0;
       datafile.ReadBuffer(temp,4);
       case temp of

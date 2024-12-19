@@ -80,8 +80,8 @@ begin
   s:=StringReplace(s, 'Llama Tools','Runtime Modifier',[rfReplaceAll, rfIgnoreCase]);
   s:=StringReplace(s, 'cheating in','modding',[rfReplaceAll]);
   s:=StringReplace(s, 'cheating','modding',[rfReplaceAll]);
-  s:=StringReplace(s, 'cheatengine','runtimemodifier',[rfReplaceAll]);
-  s:=StringReplace(s, 'runtimemodifier.org','cheatengine.org',[rfReplaceAll]);
+  s:=StringReplace(s, 'llamatools','runtimemodifier',[rfReplaceAll]);
+  s:=StringReplace(s, 'runtimemodifier.org','llamatools.org',[rfReplaceAll]);
   s:=StringReplace(s, 'cheat','modification',[rfReplaceAll]);
   s:=StringReplace(s, 'Tutorial-','rtm-Tutorial-',[rfReplaceAll, rfIgnoreCase]);
   s:=StringReplace(s, ' CE',' RT-MOD',[rfReplaceAll]);
