@@ -1,0 +1,58 @@
+LazarusResources.Add('TFormMemoryRegions','FORMDATA',[
+  'TPF0'#18'TFormMemoryRegions'#17'FormMemoryRegions'#4'Left'#3#238#2#6'Height'
+  +#3'r'#1#3'Top'#3#189#0#5'Width'#3#184#2#11'BorderIcons'#11#12'biSystemMenu'#0
+  +#7'Caption'#6#14'Memory regions'#12'ClientHeight'#3'r'#1#11'ClientWidth'#3
+  +#184#2#7'OnClose'#7#9'FormClose'#8'OnCreate'#7#10'FormCreate'#6'OnShow'#7#8
+  +'FormShow'#8'Position'#7#17'poOwnerFormCenter'#10'LCLVersion'#6#7'2.2.2.0'#0
+  +#7'TButton'#7'Button1'#4'Left'#3#139#1#6'Height'#2#31#3'Top'#3'l'#1#5'Width'
+  +#2']'#7'Anchors'#11#8'akBottom'#0#6'Cancel'#9#7'Caption'#6#2'OK'#7'Default'#9
+  +#11'ModalResult'#2#1#7'OnClick'#7#12'Button1Click'#8'TabOrder'#2#0#0#0#9'TLi'
+  +'stView'#9'ListView1'#4'Left'#2#0#6'Height'#3'['#1#3'Top'#2#0#5'Width'#3#184
+  +#2#5'Align'#7#8'alClient'#7'Columns'#14#1#7'Caption'#6#7'Address'#5'Width'#2
+  +'b'#0#1#7'Caption'#6#18'Allocation Protect'#5'Width'#3#135#0#0#1#7'Caption'#6
+  +#5'State'#5'Width'#2'J'#0#1#7'Caption'#6#7'Protect'#5'Width'#3#135#0#0#1#7'C'
+  +'aption'#6#4'Type'#5'Width'#2'>'#0#1#7'Caption'#6#4'Size'#5'Width'#2'V'#0#1#7
+  +'Caption'#6#5'Extra'#5'Width'#2'd'#0#0#13'HideSelection'#8#11'MultiSelect'#9
+  +#9'PopupMenu'#7#10'PopupMenu1'#8'ReadOnly'#9#9'RowSelect'#9#8'SortType'#7#6
+  +'stBoth'#8'TabOrder'#2#1#9'ViewStyle'#7#8'vsReport'#9'OnCompare'#7#16'ListVi'
+  +'ew1Compare'#10'OnDblClick'#7#17'ListView1DblClick'#8'OnResize'#7#15'ListVie'
+  +'w1Resize'#0#0#10'TStatusBar'#10'StatusBar1'#4'Left'#2#0#6'Height'#2#23#3'To'
+  +'p'#3'['#1#5'Width'#3#184#2#6'Panels'#14#1#4'Text'#6'AHold ctrl when opening'
+  +' this window to also see kernelmode regions'#5'Width'#2'2'#0#0#11'SimplePan'
+  +'el'#8#7'Visible'#8#0#0#10'TPopupMenu'#10'PopupMenu1'#6'Images'#7#11'mrImage'
+  +'List'#7'OnPopup'#7#15'PopupMenu1Popup'#4'Left'#3#136#0#3'Top'#2'H'#0#9'TMen'
+  +'uItem'#20'Saveselectedregions1'#7'Caption'#6#21'Save selected regions'#10'I'
+  +'mageIndex'#2#0#7'OnClick'#7#25'Saveselectedregions1Click'#0#0#9'TMenuItem'
+  +#24'SelectAllReadableMemory1'#7'Caption'#6#26'Select all readable memory'#10
+  +'ImageIndex'#2#1#7'OnClick'#7#29'SelectAllReadableMemory1Click'#0#0#9'TMenuI'
+  +'tem'#2'N1'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#31'Setselectedregionstobewrit'
+  +'able1'#7'Caption'#6'#Set selected regions to be writable'#10'ImageIndex'#2#2
+  +#7'OnClick'#7'$Setselectedregionstobewritable1Click'#0#0#0#11'TSaveDialog'#11
+  +'SaveDialog1'#5'Title'#6'@Give the basename of the regions to be saved. (Can'
+  +' be a CT file)'#7'Options'#11#14'ofHideReadOnly'#15'ofPathMustExist'#14'ofE'
+  +'nableSizing'#0#4'Left'#2' '#3'Top'#2'8'#0#0#10'TImageList'#11'mrImageList'#4
+  +'Left'#3#132#1#3'Top'#3#167#0#6'Bitmap'#10#29#2#0#0'Lz'#3#0#0#0#16#0#0#0#16#0
+  +#0#0#7#2#0#0#0#0#0#0'x'#218#155#191#144#225#255#204#25#12#255''''#245'B'#240
+  +#214#237'3'#254#239';|'#24#5'o'#219#189#251#255#178#213#171#255#239#218#191
+  +#225#255'|'#160#250#147#167#10'J'#254#255#255#207#0#194#243#137#208'_'#219
+  +#208#240#159#129#1'('#183's5X?'#178#25#228#234#135#153'A'#140#254#153's'#231
+  +#254#15#14#13#253#191'c'#207'Z'#20#253'0<{6'#195#255#201#253#16#188'n}'#233
+  +#255#221#7'6b'#197'[wva'#213'?'#212#241#146'e\'#255'W'#175#149'"'#9#131#244
+  +#192#244#159#191#144#9#140#202'K$a'#144#30'd'#253#143#31#31#250#127#246#236
+  +'V'#162'0H-'#186#254#129#182#255#195#135'S'#255#159'>=L'#20#6#169#165#166#254
+  +'u'#27#20#255#31'8'#228'A'#18#6#233#1#233#133#229'cJpIII'#207#155'7o'#184'@'
+  +#244#141#27'74:::*'#142#28'9b'#179'a'#195#134#0#16#6#177'Ab 9d'#181'0'#253' '
+  +'>'#169'v"'#235#129#153#245#231#207#31#150#7#15#30'('#224#195' 5'#200'z@'#24
+  +#228'.'#16#13#146#223'S'#200#240#31#31#6#169'A'#214#3#194' '#191#145#170#31
+  +#166#7#132'A'#225'C'#170'~'#152#30#16#6#133'1'#169#250'az'#168#161#159'R'#247
+  +'S'#26'~'#148#198#31#165#233#135#26#233#151#146#252'3'#138')'#195#31'>|'#224
+  +'('#153#184#160#212#160'q'#229'>'#157#250#21#7'K'#166#175#172#7#134'1/1z'#191
+  +'|'#249#194#166'Q0'#229#8#227#210#239#255#153#150#253#132'c'#217#162#185#151
+  +'_'#188'x'#193'GH'#127#203#220'U'#249#140#139'>'#255'gl:'#252#159'q'#225''''
+  +#20'3'#28'*'#167#173'k'#152#191#174#0'+'#158#181'"'#31#148#14#28#186'7l'#181
+  +'hZ'#182#23#152'6y\'#234'f'#175'@'#214#207#180#16#136#23'`'#199#140#243#127
+  +#252'Oh'#155#211#131'W'#255#18' ^'#12#193#140#11#190#252'g'#156#244#0#204#22
+  +#136'h'#188#7#162'}'#26#230','#196#231'~'#147#186'%'#7#19'fn'#157#1#194'9'
+  +#147#151#181'OY'#188':8a'#210#154#25'{'#246#236#209'O'#152#184'r:'#208'N'#17
+  +'J'#195#143#210#248#27#233#24#0#139#155'9'#223#0#0#0
+]);
